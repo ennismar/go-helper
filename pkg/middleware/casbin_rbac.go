@@ -1,9 +1,9 @@
 package middleware
 
 import (
+	"github.com/ennismar/go-helper/pkg/resp"
+	"github.com/ennismar/go-helper/pkg/tracing"
 	"github.com/gin-gonic/gin"
-	"github.com/piupuer/go-helper/pkg/resp"
-	"github.com/piupuer/go-helper/pkg/tracing"
 	"strings"
 	"sync"
 )

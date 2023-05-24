@@ -1,7 +1,7 @@
 package query
 
 import (
-	"github.com/piupuer/go-helper/pkg/utils"
+	"github.com/ennismar/go-helper/pkg/utils"
 	"gorm.io/gorm/schema"
 	"reflect"
 	"strings"

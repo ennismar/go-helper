@@ -2,11 +2,11 @@ package job
 
 import (
 	"context"
+	"github.com/ennismar/go-helper/pkg/log"
+	"github.com/ennismar/go-helper/pkg/query"
+	"github.com/ennismar/go-helper/pkg/tracing"
 	"github.com/go-redis/redis/v8"
 	"github.com/libi/dcron"
-	"github.com/piupuer/go-helper/pkg/log"
-	"github.com/piupuer/go-helper/pkg/query"
-	"github.com/piupuer/go-helper/pkg/tracing"
 	"github.com/pkg/errors"
 	"github.com/robfig/cron/v3"
 	"sync"

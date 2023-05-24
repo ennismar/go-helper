@@ -2,9 +2,9 @@ package fsm
 
 import (
 	"context"
-	"github.com/piupuer/go-helper/pkg/constant"
-	"github.com/piupuer/go-helper/pkg/resp"
-	"github.com/piupuer/go-helper/pkg/utils"
+	"github.com/ennismar/go-helper/pkg/constant"
+	"github.com/ennismar/go-helper/pkg/resp"
+	"github.com/ennismar/go-helper/pkg/utils"
 	"gorm.io/gorm"
 )
 

@@ -3,7 +3,7 @@ package mq
 import (
 	"context"
 	"fmt"
-	"github.com/piupuer/go-helper/pkg/constant"
+	"github.com/ennismar/go-helper/pkg/constant"
 	"google.golang.org/protobuf/types/known/emptypb"
 	"testing"
 	"time"

@@ -2,7 +2,7 @@ package log
 
 import (
 	"fmt"
-	"github.com/piupuer/go-helper/pkg/constant"
+	"github.com/ennismar/go-helper/pkg/constant"
 	"gorm.io/gorm/logger"
 	"os"
 	"path"

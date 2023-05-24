@@ -2,9 +2,9 @@ package mq
 
 import (
 	"context"
+	"github.com/ennismar/go-helper/pkg/log"
+	"github.com/ennismar/go-helper/pkg/tracing"
 	"github.com/houseofcat/turbocookedrabbit/v2/pkg/tcr"
-	"github.com/piupuer/go-helper/pkg/log"
-	"github.com/piupuer/go-helper/pkg/tracing"
 	"github.com/pkg/errors"
 	"github.com/streadway/amqp"
 	"sync/atomic"

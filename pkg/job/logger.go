@@ -1,7 +1,7 @@
 package job
 
 import (
-	"github.com/piupuer/go-helper/pkg/log"
+	"github.com/ennismar/go-helper/pkg/log"
 	"github.com/robfig/cron/v3"
 	"strings"
 )

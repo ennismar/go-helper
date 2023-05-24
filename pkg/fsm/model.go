@@ -1,6 +1,6 @@
 package fsm
 
-import "github.com/piupuer/go-helper/ms"
+import "github.com/ennismar/go-helper/ms"
 
 type Machine struct {
 	ms.M

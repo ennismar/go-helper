@@ -3,7 +3,7 @@ package utils
 import (
 	"archive/zip"
 	"bytes"
-	"github.com/piupuer/go-helper/pkg/log"
+	"github.com/ennismar/go-helper/pkg/log"
 	"golang.org/x/text/encoding/simplifiedchinese"
 	"golang.org/x/text/transform"
 	"io"

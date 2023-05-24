@@ -2,8 +2,8 @@ package log
 
 import (
 	"context"
-	"github.com/piupuer/go-helper/pkg/constant"
-	"github.com/piupuer/go-helper/pkg/tracing"
+	"github.com/ennismar/go-helper/pkg/constant"
+	"github.com/ennismar/go-helper/pkg/tracing"
 	"os"
 )
 

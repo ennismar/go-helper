@@ -2,7 +2,7 @@ package mq
 
 import (
 	"context"
-	"github.com/piupuer/go-helper/pkg/utils"
+	"github.com/ennismar/go-helper/pkg/utils"
 	"github.com/streadway/amqp"
 	"github.com/thoas/go-funk"
 )

@@ -1,6 +1,6 @@
 package router
 
-import v1 "github.com/piupuer/go-helper/api/v1"
+import v1 "github.com/ennismar/go-helper/api/v1"
 
 func (rt Router) Dict() {
 	router1 := rt.Casbin("/dict")

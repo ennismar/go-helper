@@ -2,9 +2,9 @@ package captcha
 
 import (
 	"context"
+	"github.com/ennismar/go-helper/pkg/constant"
+	"github.com/ennismar/go-helper/pkg/utils"
 	"github.com/go-redis/redis/v8"
-	"github.com/piupuer/go-helper/pkg/constant"
-	"github.com/piupuer/go-helper/pkg/utils"
 )
 
 type Options struct {

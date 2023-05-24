@@ -3,7 +3,7 @@ package log
 import (
 	"context"
 	"fmt"
-	"github.com/piupuer/go-helper/pkg/constant"
+	"github.com/ennismar/go-helper/pkg/constant"
 	"github.com/pkg/errors"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

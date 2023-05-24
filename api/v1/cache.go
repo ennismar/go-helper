@@ -3,8 +3,8 @@ package v1
 import (
 	"context"
 	"fmt"
-	"github.com/piupuer/go-helper/pkg/resp"
-	"github.com/piupuer/go-helper/pkg/utils"
+	"github.com/ennismar/go-helper/pkg/resp"
+	"github.com/ennismar/go-helper/pkg/utils"
 )
 
 const (

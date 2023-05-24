@@ -1,8 +1,8 @@
 package captcha
 
 import (
+	"github.com/ennismar/go-helper/pkg/log"
 	"github.com/mojocn/base64Captcha"
-	"github.com/piupuer/go-helper/pkg/log"
 )
 
 type Captcha struct {

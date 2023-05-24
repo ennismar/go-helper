@@ -1,9 +1,9 @@
 package mq
 
 import (
+	"github.com/ennismar/go-helper/pkg/log"
 	"github.com/google/uuid"
 	"github.com/houseofcat/turbocookedrabbit/v2/pkg/tcr"
-	"github.com/piupuer/go-helper/pkg/log"
 	"github.com/pkg/errors"
 	"github.com/streadway/amqp"
 	"sync/atomic"

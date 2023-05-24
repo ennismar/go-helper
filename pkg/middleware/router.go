@@ -1,6 +1,6 @@
 package middleware
 
-import "github.com/piupuer/go-helper/pkg/log"
+import "github.com/ennismar/go-helper/pkg/log"
 
 func PrintRouter(options ...func(*PrintRouterOptions)) func(httpMethod string, absolutePath string, handlerName string, nuHandlers int) {
 	ops := getPrintRouterOptionsOrSetDefault(nil)

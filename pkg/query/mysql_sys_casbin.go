@@ -2,10 +2,10 @@ package query
 
 import (
 	"github.com/casbin/casbin/v2"
-	"github.com/piupuer/go-helper/ms"
-	"github.com/piupuer/go-helper/pkg/log"
-	"github.com/piupuer/go-helper/pkg/tracing"
-	"github.com/piupuer/go-helper/pkg/utils"
+	"github.com/ennismar/go-helper/ms"
+	"github.com/ennismar/go-helper/pkg/log"
+	"github.com/ennismar/go-helper/pkg/tracing"
+	"github.com/ennismar/go-helper/pkg/utils"
 	"github.com/pkg/errors"
 )
 

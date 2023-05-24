@@ -1,8 +1,8 @@
 package router
 
 import (
-	v1 "github.com/piupuer/go-helper/api/v1"
-	"github.com/piupuer/go-helper/pkg/middleware"
+	v1 "github.com/ennismar/go-helper/api/v1"
+	"github.com/ennismar/go-helper/pkg/middleware"
 )
 
 func (rt Router) Base() {

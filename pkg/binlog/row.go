@@ -3,11 +3,11 @@ package binlog
 import (
 	"context"
 	"fmt"
+	"github.com/ennismar/go-helper/pkg/log"
+	"github.com/ennismar/go-helper/pkg/utils"
 	"github.com/go-mysql-org/go-mysql/canal"
 	"github.com/go-mysql-org/go-mysql/schema"
 	"github.com/golang-module/carbon/v2"
-	"github.com/piupuer/go-helper/pkg/log"
-	"github.com/piupuer/go-helper/pkg/utils"
 )
 
 const (

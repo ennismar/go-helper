@@ -1,11 +1,11 @@
 package query
 
 import (
-	"github.com/piupuer/go-helper/pkg/constant"
-	"github.com/piupuer/go-helper/pkg/fsm"
-	"github.com/piupuer/go-helper/pkg/req"
-	"github.com/piupuer/go-helper/pkg/resp"
-	"github.com/piupuer/go-helper/pkg/tracing"
+	"github.com/ennismar/go-helper/pkg/constant"
+	"github.com/ennismar/go-helper/pkg/fsm"
+	"github.com/ennismar/go-helper/pkg/req"
+	"github.com/ennismar/go-helper/pkg/resp"
+	"github.com/ennismar/go-helper/pkg/tracing"
 )
 
 // FindFsm find finite state machine

@@ -2,7 +2,7 @@ package fsm
 
 import (
 	"fmt"
-	"github.com/piupuer/go-helper/pkg/req"
+	"github.com/ennismar/go-helper/pkg/req"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"

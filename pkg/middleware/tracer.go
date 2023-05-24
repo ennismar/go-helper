@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/piupuer/go-helper/pkg/tracing"
+	"github.com/ennismar/go-helper/pkg/tracing"
 	"go.opentelemetry.io/otel"
 )
 

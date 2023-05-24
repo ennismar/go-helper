@@ -3,7 +3,7 @@ package job
 import (
 	"context"
 	"fmt"
-	"github.com/piupuer/go-helper/pkg/constant"
+	"github.com/ennismar/go-helper/pkg/constant"
 	"net/http"
 	"os"
 	"testing"

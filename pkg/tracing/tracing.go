@@ -2,9 +2,9 @@ package tracing
 
 import (
 	"context"
+	"github.com/ennismar/go-helper/pkg/constant"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"github.com/piupuer/go-helper/pkg/constant"
 	"go.opentelemetry.io/otel/trace"
 	"reflect"
 	"strings"

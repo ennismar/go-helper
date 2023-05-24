@@ -2,8 +2,8 @@ package job
 
 import (
 	"context"
-	"github.com/piupuer/go-helper/pkg/constant"
-	"github.com/piupuer/go-helper/pkg/utils"
+	"github.com/ennismar/go-helper/pkg/constant"
+	"github.com/ennismar/go-helper/pkg/utils"
 )
 
 type Options struct {

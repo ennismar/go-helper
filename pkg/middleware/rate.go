@@ -1,8 +1,8 @@
 package middleware
 
 import (
+	"github.com/ennismar/go-helper/pkg/resp"
 	"github.com/gin-gonic/gin"
-	"github.com/piupuer/go-helper/pkg/resp"
 	"github.com/ulule/limiter/v3"
 	mgin "github.com/ulule/limiter/v3/drivers/middleware/gin"
 	"github.com/ulule/limiter/v3/drivers/store/memory"

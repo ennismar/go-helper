@@ -1,6 +1,6 @@
 package req
 
-import "github.com/piupuer/go-helper/pkg/resp"
+import "github.com/ennismar/go-helper/pkg/resp"
 
 type FsmCreateMachine struct {
 	Category                   NullUint         `json:"category"`

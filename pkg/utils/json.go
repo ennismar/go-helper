@@ -2,7 +2,7 @@ package utils
 
 import (
 	"encoding/json"
-	"github.com/piupuer/go-helper/pkg/log"
+	"github.com/ennismar/go-helper/pkg/log"
 )
 
 func Struct2Json(obj interface{}) string {

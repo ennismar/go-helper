@@ -1,6 +1,6 @@
 package req
 
-import "github.com/piupuer/go-helper/pkg/resp"
+import "github.com/ennismar/go-helper/pkg/resp"
 
 type Api struct {
 	Method   string `json:"method" form:"method"`

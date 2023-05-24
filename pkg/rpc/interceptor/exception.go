@@ -2,8 +2,8 @@ package interceptor
 
 import (
 	"context"
+	"github.com/ennismar/go-helper/pkg/log"
 	grpc_recovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"
-	"github.com/piupuer/go-helper/pkg/log"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )

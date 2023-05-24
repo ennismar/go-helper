@@ -2,14 +2,14 @@ package v1
 
 import (
 	"context"
+	"github.com/ennismar/go-helper/ms"
+	"github.com/ennismar/go-helper/pkg/delay"
+	"github.com/ennismar/go-helper/pkg/oss"
+	"github.com/ennismar/go-helper/pkg/query"
+	"github.com/ennismar/go-helper/pkg/req"
+	"github.com/ennismar/go-helper/pkg/resp"
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v8"
-	"github.com/piupuer/go-helper/ms"
-	"github.com/piupuer/go-helper/pkg/delay"
-	"github.com/piupuer/go-helper/pkg/oss"
-	"github.com/piupuer/go-helper/pkg/query"
-	"github.com/piupuer/go-helper/pkg/req"
-	"github.com/piupuer/go-helper/pkg/resp"
 )
 
 type Options struct {

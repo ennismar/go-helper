@@ -3,7 +3,7 @@ package migrate
 import (
 	"context"
 	"embed"
-	"github.com/piupuer/go-helper/pkg/utils"
+	"github.com/ennismar/go-helper/pkg/utils"
 )
 
 type Options struct {

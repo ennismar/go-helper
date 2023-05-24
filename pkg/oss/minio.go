@@ -2,9 +2,9 @@ package oss
 
 import (
 	"context"
+	"github.com/ennismar/go-helper/pkg/log"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/piupuer/go-helper/pkg/log"
 	"io"
 	"net/url"
 	"time"

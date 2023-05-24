@@ -3,13 +3,13 @@ package query
 import (
 	"context"
 	"github.com/casbin/casbin/v2"
+	"github.com/ennismar/go-helper/ms"
+	"github.com/ennismar/go-helper/pkg/constant"
+	"github.com/ennismar/go-helper/pkg/fsm"
+	"github.com/ennismar/go-helper/pkg/middleware"
+	"github.com/ennismar/go-helper/pkg/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v8"
-	"github.com/piupuer/go-helper/ms"
-	"github.com/piupuer/go-helper/pkg/constant"
-	"github.com/piupuer/go-helper/pkg/fsm"
-	"github.com/piupuer/go-helper/pkg/middleware"
-	"github.com/piupuer/go-helper/pkg/utils"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
 )

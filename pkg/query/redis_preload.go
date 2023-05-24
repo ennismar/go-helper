@@ -2,8 +2,8 @@ package query
 
 import (
 	"fmt"
-	"github.com/piupuer/go-helper/pkg/log"
-	localUtils "github.com/piupuer/go-helper/pkg/utils"
+	"github.com/ennismar/go-helper/pkg/log"
+	localUtils "github.com/ennismar/go-helper/pkg/utils"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 	"gorm.io/gorm/schema"

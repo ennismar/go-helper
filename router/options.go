@@ -1,10 +1,10 @@
 package router
 
 import (
+	v1 "github.com/ennismar/go-helper/api/v1"
+	"github.com/ennismar/go-helper/pkg/middleware"
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v8"
-	v1 "github.com/piupuer/go-helper/api/v1"
-	"github.com/piupuer/go-helper/pkg/middleware"
 )
 
 type Options struct {

@@ -1,9 +1,9 @@
 package query
 
 import (
-	"github.com/piupuer/go-helper/ms"
-	"github.com/piupuer/go-helper/pkg/req"
-	"github.com/piupuer/go-helper/pkg/tracing"
+	"github.com/ennismar/go-helper/ms"
+	"github.com/ennismar/go-helper/pkg/req"
+	"github.com/ennismar/go-helper/pkg/tracing"
 	"strings"
 )
 
