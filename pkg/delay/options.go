@@ -6,7 +6,6 @@ import (
 	"github.com/ennismar/go-helper/pkg/constant"
 	"github.com/ennismar/go-helper/pkg/utils"
 	"gorm.io/gorm"
-	"strings"
 	"time"
 )
 
@@ -69,9 +68,9 @@ func WithExportSecret(secret string) func(*ExportOptions) {
 
 func WithExportEndpoint(endpoint string) func(*ExportOptions) {
 	return func(options *ExportOptions) {
-		if !strings.HasSuffix(endpoint, constant.DelayExportEndPointSuffix) {
-			endpoint = endpoint + constant.DelayExportEndPointSuffix
-		}
+		//if !strings.HasSuffix(endpoint, constant.DelayExportEndPointSuffix) {
+		//	endpoint = endpoint + constant.DelayExportEndPointSuffix
+		//}
 		getExportOptionsOrSetDefault(options).endpoint = endpoint
 	}
 }
@@ -97,8 +96,10 @@ func getExportOptionsOrSetDefault(options *ExportOptions) *ExportOptions {
 			tbPrefix:  constant.DelayExportTbPrefix,
 			objPrefix: constant.DelayExportObjPrefix,
 			machineId: fmt.Sprintf("%d", constant.One),
-			endpoint:  "oss-cn-shenzhen" + constant.DelayExportEndPointSuffix,
-			bucket:    "piupuer",
+			endpoint:  "https://cq4oss.ctyunxs.cn",
+			key:       "test",
+			secret:    "test",
+			bucket:    "test",
 			expire:    constant.DelayExportObjExpire,
 		}
 	}

@@ -2,7 +2,6 @@ package delay
 
 import (
 	"fmt"
-	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
@@ -245,7 +244,7 @@ func (ex Export) FindHistory(r *req.DelayExportHistory) (rp []resp.DelayExportHi
 				Bucket: aws.String(ex.ops.bucket),
 				Key:    aws.String(item.Url),
 			})
-			url, err := s3rsp.Presign(time.Duration(ex.ops.expire * 60))
+			url, err := s3rsp.Presign(time.Duration(ex.ops.expire) * time.Minute)
 			//url, err = bucket.SignURL(item.Url, http.MethodGet, ex.ops.expire*60)
 			if err != nil {
 				continue
@@ -308,7 +307,7 @@ func (ex Export) DeleteHistoryByIds(ids []uint) (err error) {
 				Quiet:   aws.Bool(false),
 			},
 		}
-		_, err := s3cli.DeleteObjects(deleteObjectsInput)
+		_, err = s3cli.DeleteObjects(deleteObjectsInput)
 		if err != nil {
 			session.Rollback()
 			err = errors.WithStack(err)
@@ -371,22 +370,23 @@ func (ex Export) PutObject(s3cli *s3.S3, key string, fn string) error {
 	}
 	return nil
 }
-func (ex Export) getBucket() (bucket *oss.Bucket, err error) {
-	var client *oss.Client
-	client, err = oss.New(ex.ops.endpoint, ex.ops.key, ex.ops.secret)
-	if err != nil {
-		log.WithContext(ex.ops.ctx).Error(errors.Wrap(ErrOssSecretInvalid, err.Error()))
-		err = errors.WithStack(ErrOssSecretInvalid)
-		return
-	}
-	bucket, err = client.Bucket(ex.ops.bucket)
-	if err != nil {
-		log.WithContext(ex.ops.ctx).Error(errors.Wrap(ErrOssBucketInvalid, err.Error()))
-		err = errors.WithStack(ErrOssBucketInvalid)
-		return
-	}
-	return
-}
+
+//func (ex Export) getBucket() (bucket *oss.Bucket, err error) {
+//	var client *oss.Client
+//	client, err = oss.New(ex.ops.endpoint, ex.ops.key, ex.ops.secret)
+//	if err != nil {
+//		log.WithContext(ex.ops.ctx).Error(errors.Wrap(ErrOssSecretInvalid, err.Error()))
+//		err = errors.WithStack(ErrOssSecretInvalid)
+//		return
+//	}
+//	bucket, err = client.Bucket(ex.ops.bucket)
+//	if err != nil {
+//		log.WithContext(ex.ops.ctx).Error(errors.Wrap(ErrOssBucketInvalid, err.Error()))
+//		err = errors.WithStack(ErrOssBucketInvalid)
+//		return
+//	}
+//	return
+//}
 
 func (ex Export) initSession() *gorm.DB {
 	namingStrategy := schema.NamingStrategy{

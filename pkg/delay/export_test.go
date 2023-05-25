@@ -11,7 +11,7 @@ import (
 )
 
 func TestNewExport(t *testing.T) {
-	db, _ := gorm.Open(mysql.Open("root:root@tcp(127.0.0.1:4306)/gin_web?charset=utf8mb4&collation=utf8mb4_general_ci&parseTime=True&loc=Local&timeout=10000ms"), &gorm.Config{
+	db, _ := gorm.Open(mysql.Open("root:rO0tSDfjkuisdfDFuio@tcp(39.106.224.169:3306)/gsgc_web_prod?charset=utf8mb4&collation=utf8mb4_general_ci&parseTime=True&loc=Local&timeout=10000ms"), &gorm.Config{
 		DisableForeignKeyConstraintWhenMigrating: true,
 		NamingStrategy: schema.NamingStrategy{
 			TablePrefix:   "tb_",
@@ -24,17 +24,17 @@ func TestNewExport(t *testing.T) {
 	ex := NewExport(
 		WithExportDbNoTx(db),
 	)
-	ex.Start("uuid1", "export 1", "category 1", "start")
+	ex.Start("uuid3", "export 1", "category 1", "start")
 	i := 0
 	for {
 		if i >= 100 {
 			break
 		}
-		ex.Pending("uuid1", fmt.Sprintf("%d%%", i))
+		ex.Pending("uuid3", fmt.Sprintf("%d%%", i))
 		i++
 		time.Sleep(10 * time.Millisecond)
 	}
-	ex.End("uuid1", fmt.Sprintf("%d%%", i), "/tmp/1.xlsx")
+	ex.End("uuid3", fmt.Sprintf("%d%%", i), "/tmp/test.txt")
 
 	fmt.Println(ex.FindHistory(&req.DelayExportHistory{}))
 }
